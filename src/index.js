@@ -1,12 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+//import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
+import { GridProvider } from 'contexts/GridContext';
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DndProvider backend={HTML5Backend}>
+      <GridProvider>
+        <App />
+      </GridProvider>
+    </DndProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
