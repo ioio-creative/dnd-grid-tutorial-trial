@@ -6,9 +6,9 @@ Tomasz's original source code can be found [here](https://github.com/tfiechowski
 I was looking for a solution of doing 2D grid item sorting by drag and drop and Tomasz demonstrated what I needed via [react-dnd](https://react-dnd.github.io/react-dnd/docs/overview).
 
 Some changes I have made to Tomasz's tutorial:
-- Use image placeholders with number text, e.g. https://via.placeholder.com/200x200.png?text=1
-- In GridContext where the item array is stored, the sorting involves modifying and returning a new item array instead of manipulating the original item array.
-- In DragItem, with the [useDrop](https://react-dnd.github.io/react-dnd/docs/api/use-drop) specification object, use the "drop" instead of "hover" member.
+* Use image placeholders with number text, e.g. https://via.placeholder.com/200x200.png?text=1
+* In GridContext where the item array is stored, the sorting involves modifying and returning a new item array instead of manipulating the original item array.
+* In DragItem, with the [useDrop](https://react-dnd.github.io/react-dnd/docs/api/use-drop) specification object, use the "drop" instead of "hover" member.
 
 ## Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
